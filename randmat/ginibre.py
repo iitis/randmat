@@ -1,4 +1,7 @@
-import numpy as np
+from dataclasses import dataclass
+
+# import numpy as np
+
 
 @dataclass
 class GinibreEnsemble:
@@ -8,8 +11,8 @@ class GinibreEnsemble:
 
     @property
     def idim(self):
-        return ncols
+        return self.ncols
 
     @property
     def odim(self):
-        return nrows
+        return self.nrows
